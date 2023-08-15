@@ -7,8 +7,8 @@ import { verifyAdmin, verifyUser } from "../utils/verifyToken.js";
 
 
 //update user
-router.put('/:id', verifyUser, updateUser);
-
+router.put('/:id', verifyUser, updateUser);     //verify user diya mane logged in thaka lagbe
+ 
 //delete user
 router.delete('/:id', verifyUser,deleteUser);
 
@@ -16,7 +16,7 @@ router.delete('/:id', verifyUser,deleteUser);
 router.get('/:id', verifyUser, getSingleUser);
 
 //get all user 
-router.get('/', verifyAdmin,getAllUser);
+router.get('/', verifyAdmin,getAllUser); //verify admin mane logged in user is admin
 
 
 
