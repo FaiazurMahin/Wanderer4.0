@@ -13,7 +13,7 @@ import ServiceList from '../services/ServiceList';
 import FeaturedTourList from '../components/Featured-tours/FeaturedTourList';
 
 import MasonryImagesGallery from '../components/Image-gallery/MasonryImagesGallery';
-
+import Newsletter from '../shared/Newsletter'
 import Testimonials from '../components/Testimonial/Testimonials';
 
 const Home = () => {
@@ -24,7 +24,7 @@ const Home = () => {
         <Col lg="6">
           <div className="hero__content">
             <h1>Traveling opens the door to creating <span className="highlight">memories</span></h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, nam. Vero deserunt deleniti aliquid. Magnam illo doloribus dolorum nisi ullam dignissimos velit odit? Ut enim suscipit unde asperiores quasi cum! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate quod totam provident. Nesciunt enim ex soluta quod omnis voluptate voluptas sequi accusantium? Accusantium, temporibus deleniti. Fugiat quod aliquid adipisci totam.</p>
+            <p>From the mesmerizing sunsets on remote shores to the bustling markets of foreign cities, each experience becomes a vibrant brushstroke on the canvas of your adventures. Whether you're savoring local delicacies, embracing diverse cultures, or conquering thrilling landscapes, these moments etch themselves into your heart. Traveling is an art of collecting treasures - not just souvenirs, but precious recollections that inspire, teach, and shape your very existence.</p>
           </div>
         </Col>
 
@@ -147,6 +147,9 @@ const Home = () => {
         </Col>
         <Col lg='12'>
           <Testimonials/>
+        </Col>
+        <Col>
+        <Newsletter/>
         </Col>
       </Row>
     </Container>
