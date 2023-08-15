@@ -3,7 +3,7 @@ import mongoose from "mongoose";
 const reviewSchema = new mongoose.Schema(
   {
     productId: {
-      type: mongoose.Types.ObjectId,
+      type: mongoose.Types.ObjectId,      //connects review and tour model
       ref: "Tour",
     },
     username: {

@@ -38,7 +38,7 @@ const tourSchema = new mongoose.Schema(
 
     reviews: [
       {
-        type: mongoose.Types.ObjectId,
+        type: mongoose.Types.ObjectId, //connects tour and review model
         ref: "Review",
       },
     ],
@@ -48,7 +48,7 @@ const tourSchema = new mongoose.Schema(
       default: false,
     },
   },
-  { timestamps: true }
+  { timestamps: true }  //auto update created at and updated at
 );
 
 export default mongoose.model("Tour", tourSchema);

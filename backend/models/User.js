@@ -1,11 +1,11 @@
 import mongoose from "mongoose";
 
-const userSchema = new mongoose.Schema(
+const userSchema = new mongoose.Schema(  //defines the structure inside user
   {
     username: {
       type: String,
-      required: true,
-      unique: true,
+      required: true,  // req:true means the info is required in order for the doc to be valid
+      unique: true,    //need to be unique
     },
     email: {
       type: String,

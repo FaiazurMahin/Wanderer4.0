@@ -2,7 +2,7 @@ import Tour from '../models/Tour.js'
 
 
 //create new tour
-export const createTour=async(req,res)=>{
+export const createTour=async(req,res)=>{   //async use korle await use korte parbo
 
     const newTour=new Tour(req.body);
     try{
